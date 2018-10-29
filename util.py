@@ -1,4 +1,4 @@
-def check_if_numbers_are_consecutive(list_):
+def check_if_numbers_are_consecutive(li: list):
     """
     Returns True if numbers in the list are consecutive
 
@@ -6,4 +6,4 @@ def check_if_numbers_are_consecutive(list_):
     :return: Boolean
     """
     return all(True if second - first == 1 else False
-                for first, second in zip(list_[:-1], list_[1:]))
+                for first, second in zip(li[:-1], li[1:]))
